@@ -1,19 +1,18 @@
 {
-  "name": "sinopia-delegated-auth",
+  "name": "@nicolindemann/sinopia-delegated-auth",
   "version": "0.0.1",
   "description": "Sinopia authentication plugin that delegates authentication to another HTTP URL",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "MIL Innovation AS",
   "license": "MIT",
   "keywords": [
     "sinopia"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/milinnovations/sinopia-delegated-auth.git"
+    "url": "https://github.com/nicolindemann/sinopia-delegated-auth.git"
   },
   "dependencies": {
     "request": "^2.72.0"
