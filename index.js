@@ -16,12 +16,17 @@ function DelegatedAuthentication(config, stuff) {
 
 DelegatedAuthentication.prototype.authenticate = function (user, password, cb) {
   var self = this
-  request.get(self._config.url,
+  request.post(self._config.url,
     {
       auth: {
-        user: user,
-        password: password,
+        user: self._config.clientId,
+        password: self._config.clientSecret,
         sendImmediately: true
+      },
+      formData: {
+        'grant_type': 'password',
+        username: user,
+        password: password
       },
       gzip: true,
       timeout: 1500
