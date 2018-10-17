@@ -1,9 +1,9 @@
 var request = require('request')
 
-module.exports = DelegatedAuthentication
+module.exports = CoAuth
 
-function DelegatedAuthentication(config, stuff) {
-  var self = Object.create(DelegatedAuthentication.prototype)
+function CoAuth(config, stuff) {
+  var self = Object.create(CoAuth.prototype)
 
   // config for this module
   self._config = config
@@ -14,7 +14,7 @@ function DelegatedAuthentication(config, stuff) {
   return self
 }
 
-DelegatedAuthentication.prototype.authenticate = function (user, password, cb) {
+CoAuth.prototype.authenticate = function (user, password, cb) {
   var self = this
   request.post(self._config.url,
     {
