@@ -1,14 +1,14 @@
 {
-  "name": "@nicolindemann/sinopia-delegated-auth",
+  "name": "verdaccio-coauth",
   "version": "0.0.1",
-  "description": "Sinopia authentication plugin that delegates authentication to another HTTP URL",
+  "description": "Verdaccio authentication plugin that delegates authentication to another HTTP URL",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "MIT",
   "keywords": [
-    "sinopia"
+    "verdaccio"
   ],
   "repository": {
     "type": "git",
